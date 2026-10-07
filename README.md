@@ -38,25 +38,41 @@ Program.cs        Điểm khởi chạy chương trình
 ## Cài đặt và chạy
 
 ### 1. Clone repository
+
+```bash
 git clone https://github.com/ngmaithienqui/quan-ly-kho-banh-keo.git
+```
 
 ### 2. Mở project
-Mở file: 
-QLCuaHangBanhKeo.sln 
+
+Mở file:
+
+```text
+QLCuaHangBanhKeo.sln
+```
+
 bằng Visual Studio.
 
 ### 3. Cấu hình cơ sở dữ liệu
+
 Tạo database `CuaHangBanhKeo` bằng file SQL có trong project.
+
 Sau đó kiểm tra chuỗi kết nối trong `App.config`:
+
+```xml
 connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=CuaHangBanhKeo;Integrated Security=True;"
+```
+
 Thay `.\SQLEXPRESS` bằng tên SQL Server trên máy nếu cần.
 
 ### 4. Chạy chương trình
+
 - Restore NuGet Packages
 - Build Solution
 - Nhấn `F5` để chạy
 
 ## Lưu ý
+
 Các file và thư mục sau không nên đưa lên GitHub:
 
 ```gitignore
